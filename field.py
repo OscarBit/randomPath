@@ -8,7 +8,7 @@ class Field:
         self.coordinates_of_drunks[drunk] = coordinate
 
     def move_drunk(self, drunk):
-        delta_x, delta_y =  drunk.walk()
+        delta_x, delta_y =  drunk.step()
         current_coordinate = self.coordinates_of_drunks[drunk]
         new_coordinate = current_coordinate.move(delta_x, delta_y)
 
